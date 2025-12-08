@@ -16,6 +16,7 @@ import html from "../assets/html.jpg";
 import mc from "../assets/mc.jpg";
 import ads from "../assets/ads.png";
 import { HashLink } from "react-router-hash-link";
+import {Link} from "react-router";
 
 const Hero = () => {
   const techs = [js, react, tail, boot, html, jq, wp, mc, ads];
@@ -53,12 +54,9 @@ const Hero = () => {
                 </Button>
               </HashLink>
 
-              <a
-                href="/about"
-                className="underline hover:text-blue-500 text-center sm:text-left"
-              >
-                What does WebIn do?
-              </a>
+              <Link to="/about" className="underline hover:text-blue-500 text-center sm:text-left">
+                  What does WebIn do?
+              </Link>
             </div>
           </div>
 
