@@ -8,7 +8,8 @@ const Pack = () => {
         <p className="text-center pb-8 font-bold text-4xl">
           <span className="text-blue-600 underline">Wordpress</span> Packages:
         </p>
-        <Flex className={" justify-between gap-4"}>
+        <Flex className="flex-wrap justify-center gap-6 md:justify-between">
+
           <Package
             quality={"Basic"}
             price={"$10"}

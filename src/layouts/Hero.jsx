@@ -21,66 +21,76 @@ const Hero = () => {
   const techs = [js, react, tail, boot, html, jq, wp, mc, ads];
 
   return (
-    <>
-      <div id="hero">
-        <Container>
-          <Flex>
-            <div className="w-1/2">
-              <p className="text-[72px] font-semibold leading-[77px] mt-[120px]">
-                Stay ahead of the curve with our{" "}
-                <span className="text-[#07BB38]">forward</span>{" "}
-                <span className="text-[#E1CB04]">thinking</span>
-              </p>
-              <Text
-                as="p"
-                className="text-[#878C91] text-[16px] mt-[30px] mr-[140px]"
-                text="An award-winning SEO agency with disciplines in digital marketing, design, and website development. focused on understanding you."
-              />
-              <Flex className={" mt-[50px] items-center gap-[50px]"}>
-                <HashLink to="#contact">
-<Button className={" bg-black text-white group"}>
-                  <Flex
-                    className={"items-center gap-2 hover:gap-6 duration-75"}
-                  >
-                    
+    <div id="hero" className="pt-10">
+      <Container>
+        {/* MAIN HERO FLEX */}
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
+
+          {/* LEFT SIDE */}
+          <div className="w-full lg:w-1/2">
+            <p className="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-semibold leading-tight lg:leading-[77px] mt-10">
+              Stay ahead of the curve with our{" "}
+              <span className="text-[#07BB38]">forward</span>{" "}
+              <span className="text-[#E1CB04]">thinking</span>
+            </p>
+
+            <Text
+              as="p"
+              className="text-[#878C91] text-base sm:text-lg mt-5 lg:mr-[140px]"
+              text="An award-winning SEO agency with disciplines in digital marketing, design, and website development. focused on understanding you."
+            />
+
+            {/* BUTTONS */}
+            <div className="flex flex-col sm:flex-row items-center gap-6 mt-10">
+              <HashLink smooth to="#contact">
+                <Button className="bg-black text-white group w-full sm:w-auto">
+                  <div className="flex items-center gap-2 group-hover:gap-6 duration-75">
                     <p className="group-hover:text-[22px] duration-75">
                       Talk to us
                     </p>
-                    <i class="fa-solid fa-arrow-right group-hover:text-[#07BB38] duration-200"></i>
-                  </Flex>
+                    <i className="fa-solid fa-arrow-right group-hover:text-[#07BB38] duration-200"></i>
+                  </div>
                 </Button>
-                    </HashLink>
-                
-                <a href="/about" className="underline hover:text-blue-500">
-                  What does WebIn do?
-                </a>
-              </Flex>
+              </HashLink>
+
+              <a
+                href="/about"
+                className="underline hover:text-blue-500 text-center sm:text-left"
+              >
+                What does WebIn do?
+              </a>
             </div>
-            <div className="w-1/2 flex justify-end items-center">
-              <Image source={group} className={"mt-5 "} />
-            </div>
-          </Flex>
-        </Container>
+          </div>
 
-        <div className="mt-12 border-t-2 border-b-2 border-gray-200 pt-4 pb-6">
-          <p className=" mb-3 text-center text-gray-800 text-[23px]">
-            We work with:
-          </p>
-
-          <Marquee gradient={false} speed={50}>
-            <div className="flex justify-between w-full">
-              {techs.map((tech, idx) => (
-                <div key={idx} className="mx-15">
-                  <Image source={tech} className="w-16 h-16 object-contain" />
-                </div>
-              ))}
-            </div>
-          </Marquee>
-
-
+          {/* RIGHT SIDE IMAGE */}
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+            <Image source={group} className="w-full max-w-md mt-5" />
+          </div>
         </div>
-      </div>
-    </>
+      </Container>
+
+      {/* MARQUEE */}
+      <div className="mt-12 border-t-2 border-b-2 border-gray-200 pt-4 pb-6 overflow-hidden">
+  <p className="mb-3 text-center text-gray-800 text-lg sm:text-xl">
+    We work with:
+  </p>
+
+  <Marquee gradient={false} speed={50}>
+    <div className="flex flex-nowrap items-center lg:gap-[100px] gap-6 px-4 md:px-10">
+      {techs.map((tech, idx) => (
+        <div key={idx} className="shrink-0">
+          <Image
+            source={tech}
+            className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
+          />
+        </div>
+      ))}
+    </div>
+  </Marquee>
+</div>
+
+
+    </div>
   );
 };
 
