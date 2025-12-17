@@ -16,6 +16,7 @@ import html from "../assets/html.jpg";
 import mc from "../assets/mc.jpg";
 import ads from "../assets/ads.png";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router";
 
 const Hero = () => {
   const techs = [js, react, tail, boot, html, jq, wp, mc, ads];
@@ -25,7 +26,6 @@ const Hero = () => {
       <Container>
         {/* MAIN HERO FLEX */}
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
-
           {/* LEFT SIDE */}
           <div className="w-full lg:w-1/2">
             <p className="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-semibold leading-tight lg:leading-[77px] mt-10">
@@ -46,19 +46,19 @@ const Hero = () => {
                 <Button className="bg-black text-white group w-full sm:w-auto">
                   <div className="flex items-center gap-2 group-hover:gap-6 duration-75">
                     <p className="group-hover:text-[22px] duration-75">
-                      Talk to us
+                      Book a Free Consultation
                     </p>
                     <i className="fa-solid fa-arrow-right group-hover:text-[#07BB38] duration-200"></i>
                   </div>
                 </Button>
               </HashLink>
 
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="underline hover:text-blue-500 text-center sm:text-left"
               >
                 What does WebIn do?
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -71,25 +71,23 @@ const Hero = () => {
 
       {/* MARQUEE */}
       <div className="mt-12 border-t-2 border-b-2 border-gray-200 pt-4 pb-6 overflow-hidden">
-  <p className="mb-3 text-center text-gray-800 text-lg sm:text-xl">
-    We work with:
-  </p>
+        <p className="mb-3 text-center text-gray-800 text-lg sm:text-xl">
+          We work with:
+        </p>
 
-  <Marquee gradient={false} speed={50}>
-    <div className="flex flex-nowrap items-center lg:gap-[100px] gap-6 px-4 md:px-10">
-      {techs.map((tech, idx) => (
-        <div key={idx} className="shrink-0">
-          <Image
-            source={tech}
-            className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
-          />
-        </div>
-      ))}
-    </div>
-  </Marquee>
-</div>
-
-
+        <Marquee gradient={false} speed={50}>
+          <div className="flex flex-nowrap items-center lg:gap-[100px] gap-6 px-4 md:px-10">
+            {techs.map((tech, idx) => (
+              <div key={idx} className="shrink-0">
+                <Image
+                  source={tech}
+                  className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        </Marquee>
+      </div>
     </div>
   );
 };
