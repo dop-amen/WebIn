@@ -70,7 +70,7 @@ const Hero = () => {
                 <Button className="bg-[#07BB38] hover:bg-green-600 text-white group w-full border-white sm:w-auto">
                   <div className="flex items-center gap-2 group-hover:gap-6 duration-75">
                     <p className="group-hover:text-[22px] duration-75">
-                      Customize Your Order
+                      Customize Your Order!
                     </p>
                   </div>
                 </Button>
