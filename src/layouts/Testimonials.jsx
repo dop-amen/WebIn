@@ -23,14 +23,14 @@ const Testimonials = () => {
           />
 
           <Testimonial
-            text="Simply the best. Better than all the rest..."
+            text="WebIn delivered exactly what we needed. Professional and fast service."
             name="Jacob Jones"
             role="Digital Marketer"
             avatar="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png"
           />
 
           <Testimonial
-            text="Amazing service and support, I highly recommend..."
+            text="Great communication and quality work. Highly recommended."
             name="Courtney Henry"
             role="Product Designer"
             avatar="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female-2.png"

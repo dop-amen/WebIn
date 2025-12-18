@@ -2,6 +2,7 @@ import Flex from "./Flex";
 import { useNavigate } from "react-router-dom";
 
 const Package = ({
+  category,
   quality,
   price,
   green = [],
@@ -14,14 +15,37 @@ const Package = ({
 }) => {
   const navigate = useNavigate();
 
-  const handlePurchase = () => {
-    navigate("/checkout", { state: { quality, price, green, red } });
+  const handlePurchase = (event) => {
+
+      const parent = event.currentTarget.closest("[data-category]");
+  const category = parent ? parent.getAttribute("data-category") : "Unknown";
+
+    navigate("/checkout", { state: { category, quality, price, green, red } });
+  };
+
+  const handleViewDetails = (event) => {
+
+     // find the closest parent with data-category
+  const parent = event.currentTarget.closest("[data-category]");
+  const category = parent ? parent.getAttribute("data-category") : "Unknown";
+
+    navigate("/package-details", {
+    state: { category, quality, price, green, red },
+  });
   };
 
   return (
     <div
-      className={`w-full sm:w-[45%] md:w-[30%] hover:scale-105 p-6 sm:p-8 bg-white ${className} rounded-2xl shadow-xl group transition-all duration-150`}
+      className={`w-full sm:w-[45%] md:w-[30%] hover:scale-105 p-6 sm:p-8 bg-white ${className} rounded-2xl shadow-xl group transition-all duration-150 relative`}
     >
+      <button
+        onClick={handleViewDetails}
+        className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-4 text-sm sm:text-base font-bold hover:bg-white"
+        title="View Details"
+      >
+        i
+      </button>
+
       {/* Price and Quality */}
       <div className="text-center mb-6">
         <p
@@ -30,7 +54,7 @@ const Package = ({
           {quality}
         </p>
         <p
-          className={`${priceclass} text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800`}
+          className={`${priceclass} text-l sm:text-xl md:text-2xl font-extrabold text-gray-800`}
         >
           {price}
         </p>
@@ -42,10 +66,10 @@ const Package = ({
           {green.map((item, i) => (
             <div
               key={i}
-              className={`${detailclass} px-2 sm:px-3 py-1 text-sm sm:text-base font-semibold mb-2`}
+              className={`${detailclass} flex items-start gap-2 px-2 sm:px-3 py-1 text-sm sm:text-base font-semibold mb-2`}
             >
-              <i className="fa-sharp fa-solid fa-check text-green-500 mr-1"></i>
-              {item}
+              <i className="fa-sharp fa-solid fa-check text-green-500 mt-0.5 shrink-0"></i>
+              <span className="leading-snug">{item}</span>
             </div>
           ))}
         </div>
@@ -53,10 +77,10 @@ const Package = ({
           {red.map((item, i) => (
             <div
               key={i}
-              className={`${detailclass} px-2 sm:px-3 py-1 text-sm sm:text-base font-semibold mb-2`}
+              className={`${detailclass} flex items-start gap-2 px-2 sm:px-3 py-1 text-sm sm:text-base font-semibold mb-2`}
             >
-              <i className="fa-solid fa-xmark text-red-500 mr-1"></i>
-              {item}
+              <i className="fa-solid fa-xmark text-red-500 mt-0.5 shrink-0"></i>
+              <span className="leading-snug">{item}</span>
             </div>
           ))}
         </div>

@@ -15,10 +15,22 @@ import jq from "../assets/jq.jpg";
 import html from "../assets/html.jpg";
 import mc from "../assets/mc.jpg";
 import ads from "../assets/ads.png";
+import klav from "../assets/klav.png";
+import fb from "../assets/fb.png";
+import hub from "../assets/hub.jpg";
+import brevo from "../assets/brevo.jpg";
+import ig from "../assets/ig.jpg"
+import ele from "../assets/ele.png"
+import kad from "../assets/kad.jpg"
+import nod from "../assets/nod.png"
+import php from "../assets/php.png"
+import lar from "../assets/lar.png"
+import fir from "../assets/fir.png"
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router";
 
 const Hero = () => {
-  const techs = [js, react, tail, boot, html, jq, wp, mc, ads];
+  const techs = [js, react, wp, mc, ads, fb, ig, tail, jq, boot, html, klav, hub, brevo, ele, kad, nod, php, lar, fir];
 
   return (
     <div id="hero" className="pt-10">
@@ -51,13 +63,19 @@ const Hero = () => {
                   </div>
                 </Button>
               </HashLink>
+                    
+                   
 
-              <a
-                href="/about"
-                className="underline hover:text-blue-500 text-center sm:text-left"
-              >
-                What does WebIn do?
-              </a>
+              <Link className="underline hover:text-blue-500 text-center sm:text-left" to="/custom-order">
+                <Button className="bg-[#07BB38] hover:bg-green-600 text-white group w-full border-white sm:w-auto">
+                  <div className="flex items-center gap-2 group-hover:gap-6 duration-75">
+                    <p className="group-hover:text-[22px] duration-75">
+                      Customize Your Order
+                    </p>
+                  </div>
+                </Button>
+              </Link>
+              
             </div>
           </div>
 

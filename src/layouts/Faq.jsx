@@ -20,13 +20,11 @@ const Faq = () => {
 
           <AccordionItem value="item-1" className="px-1 sm:px-3">
             <AccordionTrigger className="font-bold text-lg sm:text-xl">
-              Product Information
+              What services do you provide?
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3 sm:gap-4 text-gray-600 text-sm sm:text-base bg-white p-3 sm:p-4 rounded-2xl">
               <p>
-                Our flagship product combines cutting-edge technology with sleek
-                design. Built with premium materials, it offers unparalleled
-                performance and reliability.
+                We offer digital marketing, web design, development, lead generation, and hosting services
               </p>
               <p>
                 Key features include advanced processing capabilities, and an
@@ -38,35 +36,25 @@ const Faq = () => {
 
           <AccordionItem value="item-2" className="px-1 sm:px-3">
             <AccordionTrigger className="font-bold text-lg sm:text-xl">
-              Shipping Details
+              How long does delivery take?
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3 sm:gap-4 text-gray-600 text-sm sm:text-base bg-white p-3 sm:p-4 rounded-2xl">
               <p>
-                We offer worldwide shipping through trusted courier partners.
-                Standard delivery takes 3-5 business days, while express
-                shipping ensures delivery within 1-2 business days.
-              </p>
-              <p>
-                All orders are carefully packaged and fully insured. Track your
-                shipment in real-time through our dedicated tracking portal.
+                Delivery time depends on the project scope, usually 3-7 days.
               </p>
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-3" className="px-1 sm:px-3">
             <AccordionTrigger className="font-bold text-lg sm:text-xl">
-              Return Policy
+              Revision Policy
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3 sm:gap-4 text-gray-600 text-sm sm:text-base bg-white p-3 sm:p-4 rounded-2xl">
               <p>
-                We stand behind our products with a comprehensive 30-day return
-                policy. If you&apos;re not completely satisfied, simply return
-                the item in its original condition.
+                We want you to be fully satisfied with our work. Each package comes with a set number of revisions so you can refine the project until it meets your expectations.
               </p>
               <p>
-                Our hassle-free return process includes free return shipping and
-                full refunds processed within 48 hours of receiving the returned
-                item.
+                Our hassle-free revision process ensures your feedback is implemented promptly, with all revisions handled within the agreed timeframe. Any requests beyond the included revisions are quoted separately.
               </p>
             </AccordionContent>
           </AccordionItem>
