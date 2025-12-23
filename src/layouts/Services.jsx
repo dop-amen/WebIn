@@ -11,7 +11,6 @@ import domain from "../assets/domain.jpg";
 import seo from "../assets/seo.jpg";
 import api from "../assets/api.jpg";
 import Button from "../components/Button";
-import { Link } from "react-router";
 import { HashLink } from "react-router-hash-link";
 import Flex from "@/components/Flex";
 
@@ -94,25 +93,8 @@ const Services = () => {
             scrollToId="emailCamp"
           />
 
-          <Card
-            image={domain}
-            title="Domain & Hosting"
-            description="We set up reliable domain and hosting with full configuration, security, and maintenance to keep your website fast, live, and protected."
-            tags={["Web Hosting", "cPanel", "Cloud Hosting", "Server Setup"]}
-            scrollToId="domHost"
-          />
-          <Card
-            image={seo}
-            title="SEO - On & Off"
-            description="We set up reliable domain and hosting with full configuration, security, and maintenance to keep your website fast, live, and protected."
-            tags={[
-              "On-Page SEO",
-              "Keyword Research",
-              "Backlink Building",
-              "Google Ranking",
-            ]}
-            scrollToId="seo"
-          />
+          
+          
           <Card
             image={api}
             title="API Creation"
@@ -141,18 +123,7 @@ const Services = () => {
           </Button>
         </HashLink>
 
-        <Link
-          className="underline hover:text-blue-500 text-center sm:text-left"
-          to="/custom-order"
-        >
-          <Button className="bg-[#07BB38] hover:bg-green-600 text-white group w-full border-white sm:w-auto">
-            <div className="flex items-center gap-2 group-hover:gap-6 duration-75">
-              <p className="group-hover:text-[22px] duration-75">
-                Customize Your Order
-              </p>
-            </div>
-          </Button>
-        </Link>
+      
         </Flex>
         
       </Container>

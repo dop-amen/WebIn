@@ -7,8 +7,6 @@ import WebPack from "../components/WebPack";
 import Socialpack from "../components/Socialpack";
 import LeadGen from "@/components/LeadGen";
 import EmailCamp from "@/components/EmailCamp";
-import DomHost from "@/components/DomHost";
-import Seo from "@/components/Seo";
 import Api from "@/components/Api";
 
 const Packages = () => {
@@ -34,10 +32,10 @@ const Packages = () => {
           <Pack />
           <WebPack />
           <Socialpack />
-          <Seo/>
+
           <LeadGen />
           <EmailCamp />
-          <DomHost />
+
           <Api/>
         </Flex>
       </Container>

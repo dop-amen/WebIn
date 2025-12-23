@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../components/Button.jsx";
-import Flex from "../components/Flex.jsx";
 import Container from "../components/Container.jsx";
 import Text from "../components/Text.jsx";
 import Image from "../components/Image.jsx";
@@ -27,7 +26,7 @@ import php from "../assets/php.png"
 import lar from "../assets/lar.png"
 import fir from "../assets/fir.png"
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router";
+
 
 const Hero = () => {
   const techs = [js, react, wp, mc, ads, fb, ig, tail, jq, boot, html, klav, hub, brevo, ele, kad, nod, php, lar, fir];
@@ -66,15 +65,7 @@ const Hero = () => {
                     
                    
 
-              <Link className="underline hover:text-blue-500 text-center sm:text-left" to="/custom-order">
-                <Button className="bg-[#07BB38] hover:bg-green-600 text-white group w-full border-white sm:w-auto">
-                  <div className="flex items-center gap-2 group-hover:gap-6 duration-75">
-                    <p className="group-hover:text-[22px] duration-75">
-                      Customize Your Order
-                    </p>
-                  </div>
-                </Button>
-              </Link>
+             
               
             </div>
           </div>

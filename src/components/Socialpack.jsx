@@ -21,15 +21,16 @@ const Social = () => {
           {/* BASIC */}
           <Package
             quality="Basic"
-            price="$75 / 8,000 BDT per mo"
+            price="$17 / 2,100 BDT (7days)"
             green={[
-              "1 Platform (FB or IG)",
-              "8 Posts / Month",
+              "2 Platform",
+              "4 Posts",
+              "Reporting",
               "Basic Caption Writing",
               "Hashtag Research (Basic)",
               "Page Optimization",
               "Content Scheduling",
-              "Monthly Report",
+              
             ]}
             red={[
               "Ads Management",
@@ -46,16 +47,16 @@ const Social = () => {
           {/* PRO */}
           <Package
             quality="Pro"
-            price="$140 / 15,000 BDT per mo"
+            price="$34 / 4,100 BDT (14 days)"
             green={[
-              "FB + Instagram",
-              "12-16 Posts / Month",
+              "2 Platform",
+              "10 Posts",
+              "Detailed Reporting",
               "Professional Caption & CTA",
               "Advanced Hashtag Research",
-              "Stories (4-6 / Month)",
+              "Stories (8-10)",
               "Inbox & Comment Reply",
               "Competitor Research",
-              "Detailed Monthly Report",
             ]}
             red={["Ad Budget Included", "LinkedIn Management"]}
             className="hover:bg-[#ff5757]"
@@ -67,12 +68,13 @@ const Social = () => {
           {/* PLUS / PREMIUM */}
           <Package
             quality="Premium"
-            price="$230 / 25,000 BDT per mo"
+            price="$85 / 10,000 BDT (30 days)"
             green={[
               "FB, Instagram & LinkedIn",
-              "20-24 Posts / Month",
+              "20-24 Posts + 5 video",
+              "Engaging with followers",
               "High-Converting Captions",
-              "Stories (8-10 / Month)",
+              "Stories (18-20)",
               "Reel / Short Video Ideas",
               "Full Inbox Management" - "Ads Management & Optimization",
               "Weekly + Monthly Reports",

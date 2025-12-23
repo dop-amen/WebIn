@@ -19,12 +19,12 @@ const Email = () => {
     {/* BASIC */}
     <Package
       quality="Basic"
-      price="$55 / 6,000 BDT per mo"
+      price="$20 / 2,000 BDT per mo"
       green={[
-        "2 Campaigns / Month",
-        "Up to 1,000 Subscribers",
+        "Delivery in 3 days",
+        "2 Email Campaigns",
+        "2 Email Designs",
         "Basic Email Copywriting",
-        "Simple Template Design",
         "Basic Segmentation",
         "Campaign Scheduling",
         "Basic Performance Report",
@@ -44,16 +44,17 @@ const Email = () => {
     {/* PRO */}
     <Package
       quality="Pro"
-      price="$110 / 12,000 BDT per mo"
+      price="$110 / 12,000 BDT"
       green={[
-        "4 Campaigns / Month",
-        "Up to 5,000 Subscribers",
+        "Delivery in 7 days",
+        "5 Email Campaigns",
+        "3 Email Designs",
+        "Sign Up form",
         "Professional Copywriting",
         "Custom Email Templates",
         "Signup Form Integration",
         "Advanced Segmentation",
         "A/B Subject Testing",
-        "Detailed Monthly Report",
       ]}
       red={[
         "Advanced Funnels",
@@ -68,17 +69,18 @@ const Email = () => {
     {/* PLUS / PREMIUM */}
     <Package
       quality="Premium"
-      price="$180 / 20,000 BDT per mo"
+      price="$80 / 8,000 BDT"
       green={[
-        "8 Campaigns / Month",
-        "Up to 15,000 Subscribers",
-        "High-Converting Copy",
+        "10 Email Campaigns",
+        "7 Email Designs",
+        "Pop-up and Automation",
         "Premium Custom Design",
         "Automation & Funnels",
         "Drip & Follow-up Series",
         "A/B Content Testing",
         "Spam Score Optimization",
-        "Weekly & Monthly Reports",
+        "Weekly Reports",
+        "Delivery in 10 days"
       ]}
       red={["—"]}
       className="hover:bg-[#fbde00]"

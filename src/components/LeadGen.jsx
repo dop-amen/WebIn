@@ -19,10 +19,11 @@ const LeadGen= () => {
     {/* BASIC */}
     <Package
       quality="Basic"
-      price="$45 / 5,000 BDT per mo"
+      price="$18 / 2,000 BDT"
       green={[
-        "300 Targeted Leads",
-        "B2B or B2C (1 Niche)",
+        "100 Targeted Leads",
+        "1 Niche (B2B or B2C)",
+        "Email Verification",
         "Name & Email Only",
         "Manual Research",
         "Basic Data Verification",
@@ -43,14 +44,14 @@ const LeadGen= () => {
     {/* PRO */}
     <Package
       quality="Pro"
-      price="$90 / 10,000 BDT per mo"
+      price="$50 / 5,000 BDT"
       green={[
-        "700 Targeted Leads",
-        "Multiple Criteria",
+        "500 Targeted Leads",
+        "2 Niche",
+        "Email Verification",
         "Name, Email, Company",
         "Job Title Included",
         "Advanced Manual Research",
-        "Email Verification",
         "Quality Check",
         "Excel / Google Sheet",
       ]}
@@ -67,11 +68,12 @@ const LeadGen= () => {
     {/* PLUS / PREMIUM */}
     <Package
       quality="Premium"
-      price="$160 / 18,000 BDT per mo"
+      price="$100 / 12,000 BDT"
       green={[
-        "1,500+ Targeted Leads",
+        "1,200+ Targeted Leads",
         "Custom Niche & Location",
         "Full Contact Details",
+        "Email Verification",
         "Phone (If Available)",
         "Website / LinkedIn",
         "Premium Verification",
